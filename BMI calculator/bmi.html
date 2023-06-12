@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./bmi.css">
+</head>
+<body>
+    <div class="s1"> 
+        <h1>BMI Calculator</h1>
+    </div>
+    <div class="s2">
+    <from>
+    <label for="">Height(cm)</label>
+    <input type="number"  id="weight" placeholder="Enter yuor weight">
+    <br>
+    <br>
+    <br>
+    <label for="">Weight(kg)</label>
+    <input type="number" id="height" placeholder="Enter yuor height">
+    <br>
+    <br>
+    <br>
+    <button onclick="bmi()">submit</button>
+    
+    <p id="bmi1"></p>
+</from>
+</div>
+    
+    <script>
+        function bmi()
+        {
+            var h=parseInt(document.getElementById('height').value);
+            var w=parseInt(document.getElementById('weight').value);
+            var bmi=w/(h/100*h/100);
+            document.getElementById('bmi1').innerHTML=bmi;
+        
+        if(bmi<18)
+        {
+            document.getElementById('bmi1').innerHTML='yuor bmi is'+ bmi +'Underweight';
+        }
+        else if(bmi>18 && bmi<25)
+        {
+            document.getElementById('bmi1').innerHTML='yuor bmi is'+bmi+'Overweight';
+        }
+        else if(bmi>25)
+        {
+            document.getElementById('bmi1').innerHTML='yuor bmi is'+bmi+'Nomalweight';
+        }
+    }
+        
+    </script>
+</body>
+</html>

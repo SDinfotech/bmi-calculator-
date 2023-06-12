@@ -1,0 +1,20 @@
+.s1{
+    color: brown;
+    padding-left: 500px;
+}
+.s2{
+    padding-left: 500px;
+    background-color: aquamarine;
+    border: 3px solid;
+    width: 500px 100px 100px 100px;
+    height: 300px;
+    color: blue;
+    border-radius: 80px;
+    
+
+    
+    
+}
+body{
+    background-color: rgb(47, 107, 104);
+}
